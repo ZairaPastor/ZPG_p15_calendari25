@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calendari / 2025</title>
+  <link href="https://fonts.googleapis.com/css2?family=Chivo:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<style>
+body {
+  margin: 0;
+  font-family: 'Chivo', sans-serif;
+  color: black;
+  background-color: #e8f0d4; 
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100vh;
+  padding: 0 40px; 
+  box-sizing: border-box;
+}
+
+.left-section {
+  text-align: left;
+}
+
+.title {
+  font-size: 5rem;
+  font-weight: bold;
+  line-height: 0.9; 
+  margin-top: 384px;
+}
+
+.year {
+  font-size: 4rem;
+  font-weight: medium;
+  margin-left: 194px;
+  margin-bottom: 194px;
+}
+
+.right-section {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-wrap: wrap; 
+   gap: 40px; 
+   max-width: 70%; 
+}
+
+.months {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); 
+  gap: 50px;
+}
+
+.month {
+  position: relative;
+  color: #000000;
+  width: 140px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 500;
+  font-size: 2.5rem;
+  border-radius: 8px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+.month:hover{
+  transition: 0.5s background-color;
+  background-color: #253323;
+  color: #ffffff;
+}
+
+.month:nth-child(4n + 1) { 
+  background-color: #C9D9C3;
+}
+
+.month:nth-child(4n + 2) {
+  background-color: #6F8D64; 
+}
+
+.month:nth-child(4n + 3) { 
+  background-color: #C9D9C3; 
+}
+
+.month:nth-child(4n + 4) {
+  background-color: #6F8D64;
+}
+
+.month::before {
+  content: '';
+  position: absolute;
+  top: -5px;
+  left: 70px;
+  width: 20px;
+  height: 15px;
+  background-image: url(chincheta.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.footer {
+  margin-top: 40px;
+  max-width: 800px;
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: justify;
+  color: #333;
+}
+
+.flag-left {
+  padding-left: 15px; 
+  border-left: 5px solid #ffffff; 
+  font-size: 18px;
+  line-height: 1.5;
+  color: #253323;
+}
+
+.footer-note {
+  flex: 1; 
+  text-align: justify;
+}
+</style>
+<body>
+    <div class="container">
+        <div class="left-section">
+          <h1 class="title">CALEN<br>DARI</h1>
+          <h2 class="year">20<br>25</h2>
+        </div>
+    
+        <div class="right-section">
+          <div class="months">
+            <a href="https://leyreperales.github.io/2DG_p14/" target="_blank" class="month">GEN</a>
+            <a href="https://altea28.github.io/p14_Febrer_25/" target="_blank" class="month">FEBR</a>
+            <a href="https://paulaapm.github.io/2DG_p14/" target="_blank" class="month">MARÇ</a>
+            <a href="https://fuenteskire.github.io/p14_abril25/" target="_blank" class="month">ABR</a>
+            <a href="https://emmapeinado12.github.io/p14_maig_25/" target="_blank" class="month">MAIG</a>
+            <a href="https://carmonitabby.github.io/p14_juny/" target="_blank" class="month">JUNY</a>
+            <a href="https://carmensanchezsanchez.github.io/2DG_p14_juliol2025/" target="_blank" class="month">JUL</a>
+            <a href="https://mariaapons.github.io/2DG_p14_agost2025/" target="_blank" class="month">AG</a>
+            <a href="https://lucialopezllorca.github.io/p14_setembre25/" target="_blank" class="month">SET</a>
+            <a href="https://aitanaahidalgo.github.io/2DG_p14/" target="_blank" class="month">OCT</a>
+            <a href="https://zairapastor.github.io/p14_novembre25/" target="_blank" class="month">NOV</a>
+            <a href="https://arquesm.github.io/p14_desembre25/" target="_blank" class="month">DES</a>
+            </div>
+          <div class="footer">
+            <div class="flag-left">
+              <div class="flag"></div>
+            </div>
+            <div class="footer-note">
+              <p>
+                Per imprimir una pàgina web, només cal que facis clic amb el botó dret en qualsevol lloc de lapàgina i triïs l'opció "Imprimir" del menú. Això obrirà la finestra d'impressió, on podràs seleccionar la impressora i ajustar les opcions abans de fer clic a "Imprimir" per finalitzar.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </body>
+    </html>
